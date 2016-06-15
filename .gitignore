@@ -38,3 +38,5 @@ buck-out/
 \.buckd/
 android/app/libs
 android/keystores/debug.keystore
+
+>>>>>>> ae337d30c5424491e7435045df532e39040d949d
