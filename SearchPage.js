@@ -117,7 +117,9 @@ export default class SearchPage extends Component {
       this.props.navigator.push({
         title: 'Results',
         component: SearchResults,
-        passProps: {listings: response.listings}
+        passProps: {
+          listings: response.listings.map((property, idx) => Object.assign({}, property, {guid: idx}))
+        }
       })
     } else {
       this.setState({ message: 'Location not recognized: please try again. '})
